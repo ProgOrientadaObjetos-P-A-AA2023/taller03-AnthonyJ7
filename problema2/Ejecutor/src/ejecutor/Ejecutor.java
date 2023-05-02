@@ -47,6 +47,36 @@ public class Ejecutor {
                 eq.obtenercalcularsegundos(),
                 eq.obtenercalculardias());
         
+        EquivalenteHora eq2 = new EquivalenteHora();
+        
+        // Asignamos valores 
+        
+        float horas2 = (float) 850.25;
+        
+        // Llamamos a los metodos y les otorgamos los datos
+        
+        eq2.establecerhoras(horas2);
+  
+        // Llamamos a los metodos calcular, estos metodos tienen como funcion presentar
+        // el resultado del calculo plateado en cada uno de los metodos, no se envian datos
+        // pues trabaja con los datos asignados anteriormente
+        
+        eq2.calcularminutos();
+        eq2.calcularsegundos();
+        eq2.calculardias();
+        
+        // Procedemos a mostrar cada uno de los datos
+        
+        System.out.printf("Datos tiempo\n"
+                + "\nValor en horas: %.2f horas\n"
+                + "\nValor en minutos: %.2f minutos\n"
+                + "\nValor en segundo: %.2f segundos\n"
+                + "\nValor en dias: %.2f dias\n"
+                , eq2.obtenerhoras(),
+                eq2.obtenercalcularminutos(), 
+                eq2.obtenercalcularsegundos(),
+                eq2.obtenercalculardias());
+        
     }
     
 }
